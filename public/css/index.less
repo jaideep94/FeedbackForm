@@ -1,0 +1,464 @@
+//out :../css/index.css, sourcemap:true,compress:true
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.mainContainer {
+    position: absolute;
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 100%;
+
+    .billForm {
+        position: absolute;
+        background-color: #43515E;
+        height: 100%;
+        width: 37rem;
+        left: 50%;
+        //  z-index: 1;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+
+        .zig {
+            position: absolute;
+            height: 3rem;
+            width: 101%;
+            top: 0;
+            left: -1;
+            background-size: 1.5rem;
+            background-repeat: repeat-x;
+            background-image: url("../images/zigZagTop.png");
+        }
+
+        .nameContainer {
+            position: relative;
+            float: left;
+            background-color: #43515E;
+            height: 19rem;
+            width: 100%;
+
+            .imageContainer {
+                position: absolute;
+                width: 100%;
+                height: 8rem;
+                top: 4.5rem;
+
+                .logoImage {
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 6.5rem;
+                    left: 50%;
+                    top: 65%;
+                    -webkit-transform: translate(-50%,-50%);
+                    border: 0.3rem solid white;
+                }
+            }
+
+            .realText {
+                position: absolute;
+                width: 100%;
+                height: 3rem;
+                top: 13.5rem;
+                font-family: 'Roboto', sans-serif;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .triangle {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid #546376;
+            }
+        }
+
+        .experience {
+            position: relative;
+            float: left;
+            background-color: #546376;
+            width: 100%;
+            height: 13.5rem;
+
+            .pos {
+                position: relative;
+                height: 6rem;
+                width: 100%;
+                float: left;
+                font-size: 1.6rem;
+                font-family: 'Roboto',sans-serif;
+                text-align: center;
+                color: #FFFFFF;
+                line-height: 5.5rem;
+
+                .imagepos {
+                    position: relative;
+                    height: 7.5rem;
+                    float: left;
+                    width: 100%;
+
+                    .happy {
+                        position: absolute;
+                        height: 6rem;
+                        width: 6rem;
+                        right: 19.5rem;
+                    }
+
+                    .sad {
+                        position: absolute;
+                        height: 6rem;
+                        width: 6rem;
+                        left: 19.5rem;
+                    }
+                }
+            }
+        }
+
+        .amount {
+            position: relative;
+            width: 100%;
+            float: left;
+            height: 17rem;
+            color: #383838;
+            font-family: sans-serif;
+
+            .amountPos {
+                position: relative;
+                width: 100%;
+                height: 17rem;
+                text-align: center;
+                font-size: 7.5rem;
+                line-height: 16rem;
+                float: left;
+                background-color: #FFFFFF;
+                font-weight: 500;
+            }
+
+            span {
+                font-size: 3rem;
+                text-align: center;
+                line-height: 13rem;
+            }
+        }
+
+        .price {
+            position: absolute;
+            float: left;
+            background-color: #FFFFFF;
+            width: 100%;
+            bottom: 0;
+            top: 45.5rem;
+            padding: 2rem;
+            box-sizing: border-box;
+
+            .itemzContainer {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 1.5rem 0;
+                border-top: 0.25rem dotted #E6E6E6;
+                float: left;
+                box-sizing: border-box;
+
+                .itemRow {
+                    position: relative;
+                    width: 100%;
+                    float: left;
+                    box-sizing: border-box;
+                    padding-bottom: 1rem;
+
+                    .itemName {
+                        position: relative;
+                        width: 66%;
+                        float: left;
+                        font-size: 1.6rem;
+                        font-family: 'Roboto',sans-serif;
+                    }
+
+                    .itemPrice {
+                        position: relative;
+                        width: 34%;
+                        float: right;
+                        text-align: right;
+                        font-size: 1.6rem;
+                        font-family: 'Roboto',sans-serif;
+                    }
+                }
+
+                span {
+                    color: #A1A1A1;
+                    line-height: 2rem;
+                }
+
+                .itemRow:nth-child(3) {
+                    .itemName {
+                        color: #9C9C9C;
+                    }
+                }
+
+                .itemRow:nth-child(7) {
+                    .itemName {
+                        color: #9C9C9C;
+                    }
+                }
+            }
+        }
+    }
+
+    .happyContainer {
+        //-webkit-transition: 5s;
+        background-color: #546376;
+        position: relative;
+        height: 100%;
+        width: 37rem;
+        top: 100%;
+        float: left;
+        left: 50%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        box-sizing: border-box;
+        -webkit-transform: translateX(-50%);
+
+        .happyBox {
+            position: relative;
+            width: 100%;
+            height: 19rem;
+            float: left;
+            //  background-color:#800080;
+            .happy {
+                position: relative;
+                float: left;
+                width: 100%;
+                height: 7rem;
+
+                .happyImage {
+                    position: absolute;
+                    height: 7rem;
+                    left: 50%;
+                    top: 0.5rem;
+                    -webkit-transform: translateX(-50%);
+                }
+            }
+
+            .greatContainer {
+                position: relative;
+                float: left;
+                width: 100%;
+                font-size: 1.7rem;
+                color: #FFFFFF;
+                text-align: center;
+                top: 1rem;
+                font-weight: 300;
+                font-family: 'Roboto',sans-serif;
+                height: 2.5rem;
+            }
+
+            .tellContainer {
+                position: relative;
+                float: left;
+                width: 100%;
+                top: 0.7rem;
+                height: 3.5rem;
+                font-weight: 300;
+                font-size: 1.7rem;
+                color: #FFFFFF;
+                text-align: center;
+                font-family: 'Roboto',sans-serif;
+            }
+
+            .changeContainer {
+                position: absolute;
+                bottom: 0;
+                width: 12.7rem;
+                height: 4.5rem;
+                left: 50%;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                -webkit-transform: translateX(-50%);
+
+                .changeText {
+                    position: absolute;
+                    height: 3rem;
+                    font-size: 1.3rem;
+                    left: -1rem;
+                    top: 0.3rem;
+                    color: #9EACB5;
+                }
+
+                .changeImage {
+                    position: absolute;
+                    width: 2rem;
+                    right: 0;
+                }
+            }
+        }
+
+        .selectBox {
+            position: relative;
+            float: left;
+            width: 100%;
+            //  background-color: #C0C0C0;
+            .selectRow {
+                position: relative;
+                float: left;
+                width: 100%;
+                height: 5rem;
+                border-top: 0.05rem solid #A7B3C1;
+                box-sizing: border-box;
+
+                .selectCircle {
+                    position: absolute;
+                    height: 2.4rem;
+                    width: 2.4rem;
+                    border-radius: 50%;
+                    border: 0.2rem solid white;
+                    top: 1.1rem;
+
+                    &.changeColor {
+                        background-color: #FFFFFF;
+                    }
+                }
+
+                .selectText {
+                    position: absolute;
+                    height: 100%;
+                    padding-left: 4rem;
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+                    line-height: 5.3rem;
+                    font-family: 'Roboto',sans-serif;
+                }
+            }
+        }
+
+        .commentBox {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 14rem;
+            padding-top: 0.8rem;
+            //    background-color: #FF0000;
+            .knowMore {
+                position: relative;
+                float: left;
+                height: 100%;
+                width: 100%;
+                padding-left: 1rem;
+                background-color: #546376;
+                font-size: 1.2rem;
+                font-weight: 600;
+                border: 0.1px solid #A8B2BE;
+                border-radius: 0.5rem;
+                line-height: 2.5rem;
+                color: #FFFFFF;
+                resize: none;
+            }
+
+            .knowMore::-webkit-input-placeholder {
+                color: #A8B0BB;
+            }
+        }
+
+        .tickBox {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 7rem;
+            //background-color: #00FF00;
+            .mainReply {
+                position: relative;
+                float: left;
+                height: 2.6rem;
+                width: 100%;
+                margin-top: 2.2rem;
+
+                .replyCircle {
+                    position: absolute;
+                    height: 2.4rem;
+                    width: 2.4rem;
+                    border-radius: 50%;
+                    //  background-color: #FFFFFF;
+                    border: 0.2rem solid white;
+
+                    &.showImage {
+                        position: absolute;
+                        height: 2.8rem;
+                        width: 2.8rem;
+                        border: transparent;
+                        border-radius: 50%;
+                        background-image: url("../images/tick.png");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+
+                .replyText {
+                    position: absolute;
+                    height: 2.6rem;
+                    width: 65%;
+                    left: 4rem;
+
+                    .textAllow {
+                        position: relative;
+                        height: 1.3rem;
+                        width: 100%;
+                        font-size: 1.2rem;
+                        color: #FFFFFF;
+                        font-family: 'Roboto',sans-serif;
+                        letter-spacing: 0.05rem;
+                    }
+
+                    .textEmail {
+                        position: relative;
+                        height: 1.3rem;
+                        width: 100%;
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                        color: A0A0A0;
+                        font-family: 'Roboto',sans-serif;
+                    }
+                }
+            }
+        }
+
+        .submitBox {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 4.7rem;
+            //  background-color: #FF00FF;
+            .submitButton {
+                position: absolute;
+                line-height: 4rem;
+                left: 0;
+                right: 0;
+                font-size: 1.5rem;
+                color: #576474;
+                background-color: #FFFFFF;
+                text-align: center;
+                font-family: 'Roboto',sans-serif;
+                border-radius: 0.5rem;
+                border: 0.1rem solid white;
+                font-weight: 600;
+                line-height: 4.5rem;
+            }
+        }
+
+        &.display {
+            top: 0;
+            //    z-index: 1;
+            -webkit-transition: 1s;
+        }
+    }
+}
